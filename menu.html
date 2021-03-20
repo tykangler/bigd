@@ -6,11 +6,22 @@
       <meta name="description" content="The official website of Big D Food Trucks">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="keywords" content="food, food trucks, trucks, fusion, korean, asian">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" 
+            rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" 
+            rel="stylesheet">
+      <link rel="stylesheet" href="styles/fontawesome.min.css">
+      <link rel="stylesheet" href="styles/site.css">
+
+      <script src="scripts/all.min.js"></script>
+      <script src="scripts/custom.js"></script>
+
    </head>
 
    <body>
       <header id="header">
-         <h1 class="title">Big D</h1>
+         <h1 class="title"><a href="index.html">Big <span>D</span></a></h1>
          <nav>
             <ul class="nav">
                <li><a href="gallery.html">Gallery</a></li>
@@ -24,10 +35,247 @@
 
       <section id="menu">
          <article class="toc">
-            
+            <h4>Categories</h2>
+            <ul class="toc-categories">
+               <li>Wings</li>
+               <li>Donuts</li>
+               <li>Ramen</li>
+               <li>Breakfast Sandwiches</li>
+               <li>Sandwiches</li>
+               <li>Protein</li>
+               <li>Munchies</li>
+            </ul>
          </article>
-         <article class="menu-items">
-
+         <article class="menu-group">
+            <div id="wings">
+               <h2>Wings</h2>
+               <div class="menu-items">
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">House Special Wings (7)</span>
+                        <span class="item-price">9.99</span>
+                     </div>
+                     <span class="item-desc">
+                        7 Wings Marinated In Our Spiced House Dry Rub
+                     </span> 
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">House Special Wings (14)</span>
+                        <span class="item-price">17.99</span>
+                     </div>
+                     <span class="item-desc">
+                        14 Wings Marinated In Our Spiced House Dry Rub
+                     </span> 
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">K. Zing Wings (7)</span>
+                        <span class="item-price">10.99</span>
+                     </div>
+                     <span class="item-desc">
+                        7 Wings WET RUBBED IN our spicy sweet ZING SAUCE!!!
+                     </span> 
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">K. Zing Wings (14)</span>
+                        <span class="item-price">18.99</span>
+                     </div>
+                     <span class="item-desc">
+                        14 Wings WET RUBBED IN our spicy sweet ZING SAUCE!!!
+                     </span> 
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Garlic Soy Zing Wings (7)</span>
+                        <span class="item-price">10.99</span>
+                     </div>
+                     <span class="item-desc">
+                        7 Wings WET RUBBED IN our garlic soy ZING SAUCE!!!
+                     </span> 
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Garlic Soy Zing Wings (14)</span>
+                        <span class="item-price">18.99</span>
+                     </div>
+                     <span class="item-desc">
+                        14 Wings WET RUBBED IN our garlic soy ZING SAUCE!!!
+                     </span> 
+                  </div>
+               </div>   
+            </div>
+            <div id="donuts">
+               <h2>Donuts</h2>
+               <div class="menu-items">
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">STICKY STICKY Donuts</span>
+                        <span class="item-price">4.99</span>
+                     </div>
+                     <span class="item-desc">
+                        4 of our fresh and extra CHEWY DONUTS with a side of SWEET drizzle!!!
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div id="ramen">
+               <h2>Ramen</h2>
+               <div class="menu-items">
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Spicy or Mild Ramen</span>
+                        <span class="item-price">7.99</span>
+                     </div>
+                     <span class="item-desc">Comes with dumplings and rice cakes.</span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Seafood Ramen</span>
+                        <span class="item-price">9.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Comes with 2 Jumbo shrimp with bok-choy, bean sprouts and cabbage
+                     </span>
+                  </div>
+               </div>
+            <div id="breakfast">
+               <h2>Breakfast Sandwiches</h2>
+               <div class="menu-items">
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Big EGGG Breakfast Hoagie</span>
+                        <span class="item-price">6.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Hoagie filled with seasoned PUFFY Eggs, 
+                        cheddar cheese, fresh parsley, with our house SPICY aioli and 
+                        condensed sweet spread!!!
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Big EGGG English Muffin</span>
+                        <span class="item-price">5.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Our ENGLISH MUFFIN filled with seasoned PUFFY Eggs, cheddar cheese, 
+                        fresh parsley, with our house SPICY aioli and 
+                        condensed sweet spread!!!
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div id="sandwiches">
+               <h2>Sandwiches</h2>
+               <div class="menu-items">               
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Cheese Big-D Sandwich</span>
+                        <span class="item-price">12.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Breaded pork loin stuffed with cheese, with juicy cabbage and our 
+                        house wasabi-tonkatsu sauce
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Big-D Sandwich</span>
+                        <span class="item-price">11.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Breaded pork loin with juicy cabbage and house wasabi-tonkatsu sauce. 
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div id="protein">
+               <h2>Protein</h2>
+               <div class="menu-items">
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Original Big-D</span>
+                        <span class="item-price">9.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Breaded pork loin, comes with cabbage, comes with house 
+                        Wasabi-tonkatsu sauce!
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Cheese Big-D</span>
+                        <span class="item-price">10.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Breaded pork loin stuffed with cheese, comes with cabbage, house
+                        Wasabi-tonkatsu sauce!
+                     </span>
+                  </div>
+               </div>
+            </div>
+            <div id="munchies">
+               <h2>Munchies</h2>
+               <div class="menu-items">
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Fried Dumplings W/ OMG Sauce</span>
+                        <span class="item-price">4.50</span>
+                     </div>
+                     <span class="item-desc">
+                        5 Fried pork and vegetable dumplings. 
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Steamed Dumplings W/ OMG Sauce</span>
+                        <span class="item-price">5.50</span>
+                     </div>
+                     <span class="item-desc">
+                        5 Steamed pork and vegetable dumplings.
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">BIG SWEEET Cinnamon Toast</span>
+                        <span class="item-price">1.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Bread crusts coated in sweet cinnamon, and brown sugar. 
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">D Fried JUMBO Shrimp</span>
+                        <span class="item-price">8.99</span>
+                     </div>
+                     <span class="item-desc">
+                        5 jumbo shrimp with lemon-butter garlic sauce.
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">SPECIAL D Sampler</span>
+                        <span class="item-price">11.99</span>
+                     </div>
+                     <span class="item-desc">
+                        6 fried dumplings, 2 jumbo shrimp w/ lemon-butter garlic 
+                        sauce and 3 house SPECIAL WINGS!
+                     </span>
+                  </div>
+                  <div class="item">
+                     <div class="item-overview">
+                        <span class="item-name">Big D Coffee Mocha</span>
+                        <span class="item-price">1.99</span>
+                     </div>
+                     <span class="item-desc">
+                        Our house blend with coffee, and hot chocolate.  
+                     </span>
+                  </div>
+               </div>
+            </div>
          </article>
       </section>
 

@@ -19,10 +19,21 @@
       <meta name="description" content="The official website of Big D Food Trucks">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="keywords" content="food, food trucks, trucks, fusion, korean, asian">
+
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" 
+            rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" 
+            rel="stylesheet">
+      <link rel="stylesheet" href="styles/fontawesome.min.css">
+      <link rel="stylesheet" href="styles/site.css">
+
+      <script src="scripts/all.min.js"></script>
+      <script src="scripts/custom.js"></script>
    </head>
    <body>
       <header id="header">
-         <h1 class="title">Big D</h1>
+         <h1 class="title"><a href="index.html">Big <span>D</span></a></h1>
          <nav>
             <ul class="nav">
                <li><a href="gallery.html">Gallery</a></li>
@@ -33,41 +44,46 @@
             </ul>
          </nav>
       </header>
-
-      <section id="jumbo">
-         <img src="assets/truck_ex.png">
-      </section>
       
       <section id="about">
-         <p>
-            Sometimes, the finest foods come from the streets. Our establishment offers Japanese – 
-            Korean fusion street food found in the alleyways of Seoul, on the backstreets of Tokyo 
-            and now, in Washington. Travel to our trailers to experience a delicious fare in your 
-            own backyard. 
-         </p>
+         <img src="assets/Seafood Ramen.JPG">
+         <div class="content">
+            <h2 class="section-heading">Welcome!</h2>
+            <p>
+               Sometimes, the finest foods come from the streets. Our establishment offers Japanese – 
+               Korean fusion street food found in the alleyways of Seoul, on the backstreets of Tokyo 
+               and now, in Washington. Travel to our trailers to experience a delicious fare in your 
+               own backyard. 
+            </p>
+         </div>
       </section>
 
       <section id="locations">
-         <address>
-            <p class="loc">Lynnwood</p>
-            <p class="addr">20911 Hwy 99, Lynnwood WA 98036</p>
-            <p class="phone">425-248-9394</p>
-         </address>
-         <address>
-            <p class="loc">Lakewood</p>
-            <p class="addr">11202 Steele St S, Lakewood WA 98499</p>
-            <p class="phone">None</p>
-         </address>
+         <h2 class="section-heading">Locations</h2>
+         <div class="addresses">
+            <address>
+               <a class="loc" href="locations/lynnwood.html">Lynnwood</a>
+               <p class="addr">20911 Hwy 99, <br>Lynnwood WA 98036</p>
+               <p class="phone">425-248-9394</p>
+            </address>
+            <address>
+               <a class="loc" href="locations/lakewood.html">Lakewood</a>
+               <p class="addr">11202 Steele St S, <br>Lakewood WA 98499</p>
+               <p class="phone">Not Yet Available!</p>
+            </address>
+         </div>
       </section>
 
-      <section id="footer">
+      <footer id="footer">
          <div class="soc-links">
-            <span class="fab fa-instagram"></span>
+            <a href="https://www.instagram.com/BIG_HIGH_LAND/">
+               <span class="fab fa-instagram"></span>
+            </a>
             <span class="fab fa-facebook-square"></span>
          </div>
          <div class="copy">
-            <span>&copy;</span><span class="year">2021</span>
+            <span>&copy;</span><span class="year"> 2021</span>
          </div>
-      </section>
+      </footer>
    </body>
 </html>

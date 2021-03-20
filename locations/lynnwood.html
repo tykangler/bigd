@@ -6,61 +6,82 @@
       <meta name="description" content="The official website of Big D Food Trucks">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="keywords" content="food, food trucks, trucks, fusion, korean, asian">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" 
+            rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" 
+            rel="stylesheet">
+      <link rel="stylesheet" href="../styles/fontawesome.min.css">
+      <link rel="stylesheet" href="../styles/site.css">
+
+      <script src="../scripts/all.min.js"></script>
+      <script src="../scripts/custom.js"></script>
+
    </head>
    <body>
-      <header>
+      <header id="header">
+         <h1 class="title"><a href="../index.html">Big <span>D</span></a></h1>
          <nav>
             <ul class="nav">
-               <li><a href="gallery.html">Gallery</a></li>
+               <li><a href="../gallery.html">Gallery</a></li>
                <li><span>Locations</span></li>
-               <li><a href="menu.html">Menu</a></li>
-               <li><a href="contact.html">Contact</a></li>   
+               <li><a href="../menu.html">Menu</a></li>
+               <li><a href="../contact.html">Contact</a></li>   
                <li><span class="order">Order</span></li>
             </ul>
          </nav>
       </header>
       
-      <h1 class="location-title">Big D <span>Lynnwood</span></h1>
       
       <section id="location-info">
-         <article class="hours">
-            <span>Mon : 11:30 am - 3 pm</span>
-            <span>Tue : 11:30 am - 3 pm</span>
-            <span>Wed : 11:30 am - 3 pm</span>
-            <span>Thur : 11:30 am - 3 pm</span>
-            <span>Fri : 12 pm - 8 pm</span>
-            <span>Sat : 12 pm - 8 pm</span>
-            <span>Sun : Closed</span>
-         </article>
-         <address>
-            <article class="addr">
-               <h3>Address</h3>
-               <span>20911 Hwy 99</span>
-               <span>Lynnwood WA 98036</span>
+         <h2 class="location-title">BIG D - <span>LYNNWOOD</span></h2>
+         <div class="location-detail">
+            <article class="hours">
+               <h3 style="margin-top: 0">Hours</h3>
+               <span>Mon : 12:00 pm - 9:30 pm</span>
+               <span>Tue : 12:00 pm - 9:30 pm</span>
+               <span>Wed : 3:00 pm - 9:30 pm</span>
+               <span>Thur : 12:00 pm - 9:30 pm</span>
+               <span>Fri : 12:00 pm - 9:30 pm</span>
+               <span>Sat : 3:00 pm - 9:30 pm</span>
+               <span>Sun : 3:00 pm - 9:30 pm</span>
             </article>
-            <article class="contact">
-               <h3>Contact</h3>
-               <span>555-555-5555</span>
-               <span>info@bigd730.com</span>
+            <address>
+               <article class="addr">
+                  <h3 style="margin-top: 0">Address</h3>
+                  <span>20911 Hwy 99</span>
+                  <span>Lynnwood WA 98036</span>
+               </article>
+               <article class="contact">
+                  <h3>Contact</h3>
+                  <span>555-555-5555</span>
+                  <span>info@bigd730.com</span>
+               </article>
+            </address>
+            <article class="order">
+               <a class="uber" 
+                  href="https://order.ubereats.com/seattle/food-delivery/Big%20D/nVMFLgvFTjKc3mEpIVomRw/?utm_source=web-restaurant-manager">
+                  Order Uber Eats
+               </a>
+               <a class="grubhub">Order GrubHub</a>
             </article>
-         </address>
-         <article class="order">
-            <span class="uber">Order Uber Eats</span>
-            <span class="grubhub">Order GrubHub</span>
-         </article>
+         </div>
       </section>
 
-      <section id="other-locations">
-         <address>
-            <p class="loc">Lynnwood</p>
-            <p class="addr">20911 Hwy 99, Lynnwood WA 98036</p>
-            <p class="phone">425-248-9394</p>
-         </address>
-         <address>
-            <p class="loc">Lakewood</p>
-            <p class="addr">11202 Steele St S, Lakewood WA 98499</p>
-            <p class="phone">None</p>
-         </address>
+      <section id="locations">
+         <h2 class="section-heading">All Locations</h2>
+         <div class="addresses">
+            <address>
+               <a class="loc" href="locations/lynnwood.html">Lynnwood</a>
+               <p class="addr">20911 Hwy 99, <br>Lynnwood WA 98036</p>
+               <p class="phone">425-248-9394</p>
+            </address>
+            <address>
+               <a class="loc" href="locations/lakewood.html">Lakewood</a>
+               <p class="addr">11202 Steele St S, <br>Lakewood WA 98499</p>
+               <p class="phone">Not Yet Available!</p>
+            </address>
+         </div>
       </section>
       
       <section id="footer">
