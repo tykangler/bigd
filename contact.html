@@ -7,51 +7,107 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <meta name="keywords" content="food, food trucks, trucks, fusion, korean, asian">
       <link rel="preconnect" href="https://fonts.gstatic.com">
-      <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700;800;900&display=swap" 
-            rel="stylesheet">
-      <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" 
-            rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Pacifico&display=swap" rel="stylesheet">
       <link rel="stylesheet" href="styles/fontawesome.min.css">
-      <link rel="stylesheet" href="styles/site.css">
-
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>     
       <script src="scripts/all.min.js"></script>
-      <script src="scripts/custom.js"></script>
-
+      <link rel="stylesheet" href="styles/site.css">
    </head>
 
    <body>
-      <header id="header">
-         <h1 class="title"><a href="index.html">Big <span>D</span></a></h1>
-         <nav>
-            <ul class="nav">
-               <li><a href="gallery.html">Gallery</a></li>
-               <li><span>Locations</span></li>
-               <li><a href="menu.html">Menu</a></li>
-               <li><a href="contact.html">Contact</a></li>
-               <li><span class="order">Order</span></li>
-            </ul>
-         </nav>
-      </header>
-
-      <section id="contact-form">
-         <p>Have a question?</p>
-         <div class="personal-info">
-            <input id="fname" placeholder="First Name" autocomplete="given-name" minlength="1" required>
-            <input id="lname" placeholder="Last Name" autocomplete="family-name" minlength="1" required>
+      <nav class="navbar navbar-light navbar-expand-lg navbar-light bg-light sticky-top">
+         <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Big <span style="color: #D13C3C">D</span></a></h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav" style="justify-content: flex-end;">
+               <ul class="navbar-nav">
+                  <li class="nav-item">
+                     <a class="nav-link" aria-current="page" href="gallery.html">Gallery</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link dropdown-toggle" href="#" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Locations
+                     </a>
+                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                        <li><a class="dropdown-item" href="locations/lynnwood.html">Lynnwood</a></li>
+                        <li><a class="dropdown-item" href="locations/lakewood.html">Lakewood</a></li>
+                     </ul>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="menu.html">Menu</a>
+                  </li>
+                  <li class="nav-item">
+                     <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                     <a class="nav-link btn btn-danger dropdown-toggle" 
+                        href="#" 
+                        style="background-color: #D13C3C; color: white;"
+                        data-bs-toggle="dropdown">Order</a>
+                     <ul class="dropdown-menu dropdown-menu-right">
+                        <li>
+                           <a class="dropdown-item" 
+                              href="https://order.ubereats.com/seattle/food-delivery/Big%20D/nVMFLgvFTjKc3mEpIVomRw/?utm_source=web-restaurant-manager">
+                              Uber Eats
+                           </a>
+                        </li>
+                        <li>
+                           <a class="dropdown-item" 
+                              href="https://www.grubhub.com/restaurant/big-d-20907-hwy-99-lynnwood/2415970?classicAffiliateId=%2Fr%2Fw%2F2415970%2F">
+                              Grubhub
+                           </a>
+                        </li>
+                     </ul>
+                  </li>
+               </ul>
+            </div>
          </div>
-         <input id="email" type="email" placeholder="Your Email" autocomplete="email" 
-                minlength="1" required>
-         <textarea id="message" placeholder="Your Message" minlength="0"></textarea>
-         <button type="button">Submit</button>
+      </nav>
+
+      <section id="contact-form" class="container">
+         <p class="prompt">Have a question?</p>
+         <div class="col-md-8 offset-md-2">
+            <div class="personal-info row">
+               <div class="col-md-6">
+                  <label for="fname" class="form-label">First Name</label>
+                  <input id="fname" class="form-control" placeholder="First Name" autocomplete="given-name" minlength="1" required>
+               </div>
+               <div class="col-md-6">
+                  <label for="lname" class="form-label">Last Name</label>
+                  <input id="lname" class="form-control" placeholder="Last Name" autocomplete="family-name" minlength="1" required>
+               </div>
+            </div>
+            <div class="row mt-3">
+               <div class="col">
+                  <label for="email" class="form-label">Email</label>
+                  <input id="email" class="form-control" type="email" placeholder="Your Email" autocomplete="email" 
+                         minlength="1" required>
+               </div>
+            </div>
+            <div class="row mt-3">
+               <div class="col">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea id="message" placeholder="Your Message" minlength="0" class="form-control" rows="10"></textarea>
+               </div>
+            </div>
+         </div>
+         <div class="text-center">
+            <button type="button" class="btn btn-danger mt-4">Submit</button>
+         </div>
       </section>
 
       <footer id="footer">
          <div class="soc-links">
-            <span class="fab fa-instagram"></span>
+            <a href="https://www.instagram.com/BIG_HIGH_LAND/">
+               <span class="fab fa-instagram"></span>
+            </a>
             <span class="fab fa-facebook-square"></span>
          </div>
          <div class="copy">
-            <span>&copy;</span><span class="year">2021</span>
+            <span>&copy;</span><span class="year"> 2021</span>
          </div>
       </footer>
    </body>
