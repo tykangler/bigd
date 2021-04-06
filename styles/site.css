@@ -22,9 +22,14 @@ a:hover {
    font-size: 30px;
 }
 
-.navbar-nav {
-   width: 600px;
-   justify-content: space-between;
+.navbar-nav > *{
+   margin-left: 40px;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 769px) {
+   .navbar-nav > * {
+      margin-left: inherit;
+   }
 }
 
 .navbar .dropdown-menu-right {
@@ -107,13 +112,32 @@ a:hover {
    padding-top: 15px;
 }
 
-#masonry  {
-   columns: auto 3;
+#masonry {
+   display: flex;
+   flex: 50%;
+   flex-wrap: wrap;
 }
 
 #masonry * {
-   width: 100%;
+   width: 49%;
+   height: 500px;
    margin-bottom: 10px;
+   object-fit: cover;
+}
+
+#masonry *:nth-child(2n) {
+   margin-left: 10px;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 426px) {
+   #masonry * {
+      width: 100%;
+      height: 300px;
+   }
+
+   #masonry *:nth-child(2n) {
+      margin-left: 0;
+   }
 }
 
 .toc {
@@ -190,6 +214,12 @@ textarea {
    border-bottom: 5px solid #D13C3C;
    padding-bottom: 50px;
    margin-bottom: 50px;
+}
+
+@media only screen and (max-width: 326px) {
+   #location-info .section-heading {
+      font-size: 40px;
+   }
 }
 
 #location-info .order {
